@@ -17,3 +17,5 @@ export default function Home() {
     </>
   )
 }
+// "proxy": "http://localhost:8800/api"
+// "proxy": "http://localhost:8800/api"

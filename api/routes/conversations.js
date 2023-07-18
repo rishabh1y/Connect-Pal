@@ -17,7 +17,7 @@ try{
 }catch(err){
     res.status(500).json(err)
 }
-})
+});
 
 //get a conv. of user
 
@@ -30,7 +30,7 @@ router.get("/:userId", async (req,res)=>{
     }catch(err){
         res.status(500).json(err)
     }
-})
+});
 
 
 
@@ -47,6 +47,6 @@ router.get('/find/:firstUserId/:secondUserId', async (req,res)=>{
     }catch(err){
         res.status(500).json(err)
     }
-})
+});
 
 module.exports = router;

@@ -12,7 +12,7 @@ router.post("/",async(req,res)=>{
     }catch(err){
         res.status(500).json(err)
     }
-})
+});
 //update a post
  
 router.put("/:id" , async(req,res)=>{
@@ -27,7 +27,7 @@ res.status(200).json("Your Post has been updated")
 }catch(err){
     res.status(500).json(err)
 }
-})
+});
 
 //delete a post
 router.delete("/:id" , async(req,res)=>{
@@ -42,7 +42,7 @@ res.status(200).json("The Post has been deleted")
 }catch(err){
     res.status(500).json(err)
 }
-})
+});
 
 
 
@@ -62,7 +62,7 @@ router.put("/:id/like",async(req,res)=>{
     }catch(err){
         res.status(500).json(err);
     }
-})
+});
 
 
 //get a post
@@ -74,7 +74,7 @@ try{
 catch(err){
     res.status(500).json(err);
 }
-})
+});
 
 
 
@@ -93,7 +93,7 @@ router.get("/timeline/:userId", async (req,res) => {
     }catch(err){
         res.status(500).json(err);
     }
-})
+});
 
 
 
@@ -107,5 +107,6 @@ router.get("/profile/:username", async (req,res) => {
     }catch(err){ 
         res.status(500).json(err);
     }
-})
+});
+
 module.exports = router;

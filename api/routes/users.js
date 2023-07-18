@@ -27,7 +27,7 @@ router.put("/:id" , async(req,res) =>{
     else{
         res.status(403).json("You can update only your account");
     }
-})
+});
 
 
 //Delete a User
@@ -45,7 +45,7 @@ router.delete("/:id" , async(req,res) =>{
     else{
         res.status(403).json("You can delete only your account");
     }
-})
+});
 
 
 
@@ -64,7 +64,7 @@ res.status(200).json(other)
 catch(err){
 res.status(500).json(err)
 }
-})
+});
 
 
 //get friends 
@@ -85,7 +85,7 @@ router.get("/friends/:userId",async (req,res)=>{
     }catch(err){
         res.status(500).json(err)
     }
-})
+});
 
 //follow a user
 router.put("/:id/follow", async(req,res)=>{
@@ -109,7 +109,7 @@ res.status(500).json(err);
     else{
         res.status(403).json("You can't follow yourself")
     }
-})
+});
 
 
 
@@ -138,7 +138,7 @@ res.status(500).json(err);
     else{
         res.status(403).json("You can't unfollow yourself")
     }
-})
+});
 
 
 module.exports = router;

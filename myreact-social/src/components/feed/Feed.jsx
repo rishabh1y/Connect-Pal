@@ -34,8 +34,6 @@ export default function Feed({username}) {
         {posts?.map(p=>(
           <Post key = {p._id} post={p}/>
         ))}
-        
-
 
         
       </div>
